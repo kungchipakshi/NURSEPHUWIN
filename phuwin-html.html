@@ -1,0 +1,1335 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Sets the page information and display settings -->
+    <meta charset="utf-8">
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1,
+      maximum-scale=1, user-scalable=no, viewport-fit=cover"
+    >
+    <meta name="theme-color" content="#121417">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+
+    <!-- Page title shown in the browser -->
+    <title>Phuwin's iPhone</title>
+
+    <!-- Loads the fonts used in the project -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Grand+Hotel&display=swap"
+      rel="stylesheet"
+    >
+
+    <!-- Connects the external CSS file -->
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <!-- Main container for the phone mockup -->
+    <div id="stage">
+      <div id="phone" class="locked">
+
+        <!-- Dynamic Island and phone status bar -->
+        <div class="island"></div>
+
+        <div class="status">
+          <span id="sbt">18:55</span>
+
+          <span>
+            <svg
+              width="18"
+              height="12"
+              viewBox="0 0 18 12"
+              fill="currentColor"
+            >
+              <rect x="0" y="8" width="3" height="4" rx="1"/>
+              <rect x="5" y="5" width="3" height="7" rx="1"/>
+              <rect x="10" y="2" width="3" height="10" rx="1"/>
+              <rect
+                x="15"
+                y="0"
+                width="3"
+                height="12"
+                rx="1"
+                opacity=".4"
+              />
+            </svg>
+
+            4G <b class="bp">100</b>
+          </span>
+        </div>
+
+        <!-- Phone wallpaper -->
+        <div class="wall" id="wall"></div>
+
+        <!-- HOME SCREEN -->
+        <div class="screen" id="home">
+          <div class="grid">
+
+            <!-- Battery widget -->
+            <div class="wc" style="grid-column: span 4">
+              <div class="w b">
+                <div class="bi">
+                  <div class="ringw">
+                    <div class="ring" style="--p:100"></div>
+                    <i class="g-ph"></i>
+                  </div>
+                  100%
+                </div>
+
+                <div class="bi">
+                  <div class="ringw">
+                    <div class="ring" style="--p:100"></div>
+                    <i class="g-ap"></i>
+                  </div>
+                  100%
+                </div>
+
+                <div class="bi">
+                  <div class="ringw">
+                    <div class="ring" style="--p:100"></div>
+                    <i class="g-cs"></i>
+                  </div>
+                  100%
+                </div>
+
+                <div class="bi">
+                  <div class="ringw">
+                    <div class="ring" style="--p:0"></div>
+                  </div>
+                  &nbsp;
+                </div>
+              </div>
+              Batteries
+            </div>
+
+            <!-- Reminders widget -->
+            <div
+              class="wc"
+              style="grid-column: span 2; grid-row: span 2"
+            >
+              <div class="w rem">
+                <h4>
+                  <em>2</em>
+                  <span>Today</span>
+                </h4>
+
+                <div class="ri">
+                  <div>
+                    11/25 duty 2p-10p
+                    <small>3:20 PM</small>
+                  </div>
+                </div>
+
+                <div class="ri">
+                  <div>
+                    nclex requirements
+                    <small>5:00 PM</small>
+                  </div>
+                </div>
+              </div>
+              Reminders
+            </div>
+
+            <!-- Notes application -->
+            <div class="app" data-open="notes">
+              <div class="ic i-notes"></div>
+              Notes
+            </div>
+
+            <!-- Calendar application -->
+            <div class="app" data-open="cal">
+              <div class="ic cal">
+                <span id="cw">Wed</span>
+                <b id="cd">28</b>
+              </div>
+              Calendar
+            </div>
+
+            <!-- Clock application -->
+            <div class="app" data-open="clock">
+              <div class="ic" style="background: #fff">
+                <svg
+                  width="58"
+                  height="58"
+                  viewBox="-30 -30 60 60"
+                >
+                  <circle
+                    r="29"
+                    fill="#fff"
+                    stroke="#e3e3e6"
+                  />
+                  <g id="ticks"></g>
+                  <line
+                    id="ih"
+                    stroke="#111"
+                    stroke-width="2.6"
+                    stroke-linecap="round"
+                    y2="-12"
+                  />
+                  <line
+                    id="im"
+                    stroke="#111"
+                    stroke-width="1.8"
+                    stroke-linecap="round"
+                    y2="-19"
+                  />
+                  <line
+                    id="is"
+                    stroke="#ff9f0a"
+                    stroke-width="1"
+                    y2="-22"
+                  />
+                </svg>
+              </div>
+              Clock
+            </div>
+
+            <!-- Photos application -->
+            <div class="app" data-open="photos">
+              <div class="ic i-photos"></div>
+              Photos
+            </div>
+
+            <!-- Other home screen applications -->
+            <div class="app">
+              <div class="ic i-garden"></div>
+              Gardenscapes
+            </div>
+
+            <div class="app">
+              <div class="ic i-gmail"></div>
+              Gmail
+            </div>
+
+            <!-- Locket widget -->
+            <div
+              class="wc"
+              style="grid-column: span 2; grid-row: span 2"
+            >
+              <div class="w lk" id="locket">
+                <div class="st">
+                  <svg viewBox="0 0 24 24">
+                    <path
+                      d="M12 2c1 4 5 6 5 11a5 5 0 0 1-10 0
+                      c0-2 1-3 2-4 0 2 1 3 2 3 0-4-1-6 1-10z"
+                    />
+                  </svg>
+                  7
+                </div>
+
+                <div class="cap">
+                  <div class="pp" id="lpp"></div>
+                  <span>get me outtt</span>
+                </div>
+              </div>
+              Locket
+            </div>
+
+            <!-- Other applications -->
+            <div class="app">
+              <div class="ic i-netflix"></div>
+              Netflix
+            </div>
+
+            <div class="app">
+              <div class="ic i-maps"></div>
+              Maps
+            </div>
+          </div>
+
+          <!-- Home screen search bar -->
+          <div class="search">
+            🔍 Search
+          </div>
+
+          <!-- Bottom application dock -->
+          <div class="dock">
+            <div class="app" data-open="ig">
+              <div class="ic i-ig">
+                <svg
+                  width="53"
+                  height="53"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#fff"
+                  stroke-width="1.9"
+                  stroke-linecap="round"
+                >
+                  <rect
+                    x="3.500"
+                    y="3.500"
+                    width="17"
+                    height="17"
+                    rx="5"
+                  />
+                  <circle cx="12" cy="12" r="3.900"/>
+                  <circle
+                    cx="16.900"
+                    cy="7.100"
+                    r=".8"
+                    fill="#fff"
+                    stroke="none"
+                  />
+                </svg>
+              </div>
+            </div>
+
+            <div class="app" data-open="phone">
+              <div class="ic i-phone">
+                <span class="bd">2</span>
+              </div>
+            </div>
+
+            <div class="app" data-open="msg">
+              <div class="ic i-msg">
+                <span class="bd">1</span>
+              </div>
+            </div>
+
+            <div class="app" data-open="spot">
+              <div class="ic i-spot"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- NOTES APPLICATION -->
+        <div class="ap lt" id="ap-notes" style="background: #f2f2f7">
+
+          <!-- Notes list -->
+          <div id="nlist" class="np">
+            <div class="th">
+              <button class="gb" data-close>‹</button>
+
+              <div class="tc">
+                <b>All iCloud</b>
+                <small id="ncount"></small>
+              </div>
+
+              <button class="gb" id="nmore">•••</button>
+            </div>
+
+            <div class="sc" id="nsc"></div>
+
+            <!-- Notes search and add button -->
+            <div class="bt">
+              <div class="gb sp">
+                <span>🔍</span>
+                <input id="nq" placeholder="Search">
+                <span>🎙</span>
+              </div>
+
+              <button class="gb" id="nnew">✎</button>
+            </div>
+          </div>
+
+          <!-- Notes editor -->
+          <div id="ned" class="np ned">
+            <div class="th">
+              <button class="gb" id="nback">‹</button>
+              <span></span>
+              <button class="gb" id="ndel">🗑</button>
+            </div>
+
+            <div class="sc">
+              <textarea id="ntxt"></textarea>
+            </div>
+          </div>
+        </div>
+
+        <!-- CALENDAR APPLICATION -->
+        <div class="ap lt" id="ap-cal">
+
+          <!-- Calendar header -->
+          <div
+            class="th"
+            style="position: absolute; top: 0; left: 0;
+            right: 0; z-index: 3"
+          >
+            <button
+              class="gb"
+              data-close
+              style="padding: 0 16px; font-size: 17px"
+            >
+              ‹ <span id="cyr"></span>
+            </button>
+
+            <div
+              class="gb"
+              style="padding: 0 6px; gap: 6px; display: flex"
+            >
+              <button class="ib" id="cadd">＋</button>
+            </div>
+          </div>
+
+          <!-- Current month -->
+          <div style="padding: 118px 18px 0">
+            <div
+              id="cmt"
+              style="font-size: 38px; font-weight: 700"
+            ></div>
+          </div>
+
+          <!-- Days of the week -->
+          <div class="cwk">
+            <span>M</span>
+            <span>T</span>
+            <span>W</span>
+            <span>T</span>
+            <span>F</span>
+            <span>S</span>
+            <span>S</span>
+          </div>
+
+          <!-- Calendar dates and events -->
+          <div id="cs" class="sc2"></div>
+
+          <div class="bt">
+            <button
+              class="gb"
+              id="ctod"
+              style="padding: 0 22px; font-size: 17px"
+            >
+              Today
+            </button>
+          </div>
+
+          <!-- Event creation panel -->
+          <div id="csheet" class="sheet">
+            <b id="csd"></b>
+            <div id="cev"></div>
+
+            <div
+              style="display: flex; gap: 8px; margin-top: 10px"
+            >
+              <input
+                class="inp"
+                id="cin"
+                placeholder="New event"
+                style="margin: 0"
+              >
+              <button class="pill" id="cok">Add</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- CLOCK APPLICATION -->
+        <div class="ap lt" id="ap-clock">
+          <div class="th">
+            <button class="gb" data-close>‹</button>
+            <b id="ctitle" style="font-size: 17px"></b>
+            <button class="gb" id="alp">＋</button>
+          </div>
+
+          <!-- Clock content changes based on selected tab -->
+          <div
+            class="sc"
+            id="cl-body"
+            style="padding-bottom: 110px"
+          ></div>
+
+          <!-- Clock navigation tabs -->
+          <div class="tabs">
+            <button data-t="w">
+              <i>🌐</i>World Clock
+            </button>
+
+            <button data-t="a" class="on">
+              <i>⏰</i>Alarms
+            </button>
+
+            <button data-t="s">
+              <i>⏱</i>Stopwatch
+            </button>
+
+            <button data-t="t">
+              <i>⏲</i>Timers
+            </button>
+          </div>
+
+          <!-- Alarm notification -->
+          <div
+            id="ring"
+            class="sheet"
+            style="text-align: center; font-size: 20px"
+          >
+            <b>⏰ Alarm</b>
+            <br>
+
+            <button
+              class="pill"
+              id="rst"
+              style="margin-top: 10px"
+            >
+              Stop
+            </button>
+          </div>
+        </div>
+
+        <!-- PHOTOS APPLICATION -->
+        <div class="ap lt" id="ap-photos">
+          <div class="th ph-h">
+            <div>
+              <h1>Library</h1>
+              <small id="pdt"></small>
+            </div>
+
+            <span style="display: flex; gap: 8px">
+              <button class="gb sel">Select</button>
+            </span>
+          </div>
+
+          <!-- Photo library content -->
+          <div class="sc3" id="pgw"></div>
+
+          <!-- Photo library controls -->
+          <div class="bt">
+            <button class="gb" id="plib">🖼</button>
+
+            <div class="gb seg" id="pseg">
+              <span data-v="y">Years</span>
+              <span data-v="m">Months</span>
+              <span data-v="a" class="on">All</span>
+            </div>
+
+            <button class="gb">🔍</button>
+          </div>
+        </div>
+
+        <!-- PHONE APPLICATION -->
+        <div class="ap lt" id="ap-phone">
+
+          <!-- Recent calls -->
+          <div class="pv on" id="pv-r">
+            <div class="th">
+              <button
+                class="gb"
+                style="padding: 0 22px; font-size: 17px"
+              >
+                Edit
+              </button>
+
+              <div
+                class="gb seg"
+                style="flex: none; padding: 4px"
+                id="rseg"
+              >
+                <span
+                  class="on"
+                  data-f="a"
+                  style="padding: 10px 22px"
+                >
+                  All
+                </span>
+
+                <span data-f="m" style="padding: 10px 18px">
+                  Missed
+                </span>
+              </div>
+
+              <button class="gb">≡</button>
+            </div>
+
+            <div class="h1">Recent</div>
+
+            <div style="padding: 0 18px">
+              <div class="sbar">
+                🔍<input id="rq" placeholder="Search">
+              </div>
+            </div>
+
+            <div
+              class="sc"
+              id="rlist"
+              style="padding-top: 0"
+            ></div>
+          </div>
+
+          <!-- Contacts list -->
+          <div class="pv" id="pv-c">
+            <div class="th">
+              <button class="gb" id="cback">‹</button>
+              <b style="font-size: 19px">Contacts</b>
+              <button class="gb" id="cplus">＋</button>
+            </div>
+
+            <div style="padding: 0 18px">
+              <div class="sbar">
+                🔍<input id="cq" placeholder="Search">
+              </div>
+            </div>
+
+            <div
+              class="sc"
+              id="clist"
+              style="padding-top: 0"
+            ></div>
+
+            <div class="idx" id="cidx"></div>
+          </div>
+
+          <!-- Phone keypad -->
+          <div class="pv" id="pv-k">
+            <div id="kdis"></div>
+            <div class="kg" id="kg"></div>
+
+            <div
+              style="display: flex; justify-content: center;
+              align-items: center; gap: 22px; margin-top: 22px"
+            >
+              <span style="width: 78px"></span>
+
+              <button class="kk call2" id="kcall">✆</button>
+
+              <button
+                class="gb"
+                id="kdel"
+                style="width: 78px; border: 0; box-shadow: none;
+                background: none; font-size: 26px;
+                visibility: hidden"
+              >
+                ⌫
+              </button>
+            </div>
+          </div>
+
+          <!-- Voicemail list -->
+          <div class="pv" id="pv-v">
+            <div class="th">
+              <button
+                class="gb"
+                style="padding: 0 22px; font-size: 17px"
+              >
+                Edit
+              </button>
+
+              <button
+                class="gb"
+                style="padding: 0 22px; font-size: 17px"
+              >
+                Greeting
+              </button>
+            </div>
+
+            <div class="h1">Voicemail</div>
+
+            <div
+              class="sc"
+              id="vlist"
+              style="padding-top: 0"
+            ></div>
+          </div>
+
+          <!-- Phone navigation tabs -->
+          <div class="tabs bl" id="ptabs">
+            <button data-t="r" class="on">
+              <i>
+                <svg
+                  viewBox="0 0 24 24"
+                  width="26"
+                  height="26"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                >
+                  <circle cx="12" cy="12" r="9"/>
+                  <path d="M12 7v5h4"/>
+                </svg>
+              </i>
+              Recents
+            </button>
+
+            <button data-t="c">
+              <i>
+                <svg
+                  viewBox="0 0 24 24"
+                  width="26"
+                  height="26"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                >
+                  <circle cx="12" cy="8" r="4"/>
+                  <path d="M4 21c0-4 4-6 8-6s8 2 8 6"/>
+                </svg>
+              </i>
+              Contacts
+            </button>
+
+            <button data-t="k">
+              <i>
+                <svg
+                  viewBox="0 0 24 24"
+                  width="26"
+                  height="26"
+                  fill="currentColor"
+                >
+                  <circle cx="5" cy="5" r="1.9"/>
+                  <circle cx="12" cy="5" r="1.9"/>
+                  <circle cx="19" cy="5" r="1.9"/>
+                  <circle cx="5" cy="11" r="1.9"/>
+                  <circle cx="12" cy="11" r="1.9"/>
+                  <circle cx="19" cy="11" r="1.9"/>
+                  <circle cx="5" cy="17" r="1.9"/>
+                  <circle cx="12" cy="17" r="1.9"/>
+                  <circle cx="19" cy="17" r="1.9"/>
+                  <circle cx="12" cy="22" r="1.9"/>
+                </svg>
+              </i>
+              Keypad
+            </button>
+
+            <button data-t="v">
+              <i>
+                <svg
+                  viewBox="0 0 24 24"
+                  width="26"
+                  height="26"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                >
+                  <circle cx="7" cy="12" r="4"/>
+                  <circle cx="17" cy="12" r="4"/>
+                  <path d="M7 16h10"/>
+                </svg>
+                <b class="vbd" id="vbd">2</b>
+              </i>
+              Voicemail
+            </button>
+          </div>
+
+          <!-- Active phone call screen -->
+          <div id="calling">
+            <div id="calla"></div>
+
+            <div
+              id="calln"
+              style="font-size: 30px; font-weight: 600;
+              margin-top: 10px"
+            ></div>
+
+            <div id="calls" style="color: #555"></div>
+
+            <button
+              class="cb r"
+              id="cend"
+              style="margin-top: auto; margin-bottom: 90px;
+              width: 76px; height: 76px; font-size: 30px;
+              background: #ff3b30; color: #fff"
+            >
+              ✆
+            </button>
+          </div>
+        </div>
+
+        <!-- MESSAGES APPLICATION -->
+        <div class="ap lt" id="ap-msg">
+
+          <!-- List of message conversations -->
+          <div class="np" id="mlist" style="background: #fff">
+            <div class="th">
+              <button
+                class="gb"
+                style="padding: 0 22px; font-size: 17px"
+              >
+                Edit
+              </button>
+
+              <button class="gb">≡</button>
+            </div>
+
+            <div class="h1">Messages</div>
+            <div
+              class="sc"
+              id="mls"
+              style="padding-top: 0; padding-left: 8px"
+            ></div>
+
+            <!-- Message search and compose button -->
+            <div class="bt">
+              <div class="gb sp">
+                <span>🔍</span>
+                <input id="mq" placeholder="Search">
+                <span>🎙</span>
+              </div>
+
+              <button class="gb" id="mnew">✎</button>
+            </div>
+          </div>
+
+          <!-- Individual message conversation -->
+          <div
+            class="np ned"
+            id="mthr"
+            style="background: #fff"
+          >
+            <div class="thh">
+              <button class="gb" id="mback">
+                ‹<span id="mun"></span>
+              </button>
+
+              <div class="thc">
+                <div id="mhav"></div>
+                <div class="gb" id="mhn"></div>
+              </div>
+
+              <button class="gb">🎥</button>
+            </div>
+
+            <!-- Messages appear inside this area -->
+            <div class="mbody" id="mbody"></div>
+            <div id="mwho"></div>
+
+            <!-- Message input and send button -->
+            <div class="mcomp">
+              <button
+                class="gb"
+                id="mplus"
+                title="Switch sender"
+              >
+                ＋
+              </button>
+
+              <input
+                class="in"
+                id="min"
+                placeholder="iMessage"
+              >
+
+              <button class="gb" id="msend">↑</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- SPOTIFY APPLICATION -->
+        <div class="ap lt" id="ap-spot">
+          <div class="th" style="padding-bottom: 10px">
+            <button class="gb" data-close>‹</button>
+            <b style="font-size: 19px">Spotify</b>
+            <span style="width: 50px"></span>
+          </div>
+
+          <iframe
+            id="sf"
+            style="flex: 1; border: 0; width: 100%;
+            border-radius: 20px 20px 0 0"
+            allow="autoplay; clipboard-write; encrypted-media;
+            fullscreen; picture-in-picture"
+            loading="lazy"
+          ></iframe>
+        </div>
+
+        <!-- INSTAGRAM APPLICATION -->
+        <!-- SVG symbols are reused for Instagram icons -->
+        <svg
+          width="0"
+          height="0"
+          style="position: absolute"
+          aria-hidden="true"
+        >
+          <symbol id="i-home" viewBox="0 0 24 24">
+            <path d="M3.5 10.2 12 3l8.5 7.2V20a1 1 0 0 1-1 1H15v-6.5H9V21H4.5a1 1 0 0 1-1-1z"/>
+          </symbol>
+
+          <symbol id="i-reels" viewBox="0 0 24 24">
+            <rect x="3" y="3" width="18" height="18" rx="5"/>
+            <path d="M3.5 8.5h17M9 3.2l3 5.3M15 3.2l3 5.3"/>
+            <path d="M10.2 12.2v4.6l4-2.3z" fill="currentColor"/>
+          </symbol>
+
+          <symbol id="i-send" viewBox="0 0 24 24">
+            <path d="M21.5 3.5 3 10.3l7.2 3.3 3.3 7.2z"/>
+            <path d="M21.5 3.5 10.2 13.6"/>
+          </symbol>
+
+          <symbol id="i-search" viewBox="0 0 24 24">
+            <circle cx="11" cy="11" r="7"/>
+            <path d="m20.5 20.5-4.6-4.6"/>
+          </symbol>
+
+          <symbol id="i-heart" viewBox="0 0 24 24">
+            <path d="M12 20.8S3 15.4 3 8.9a4.7 4.7 0 0 1 9-1.9 4.7 4.7 0 0 1 9 1.9c0 6.5-9 11.9-9 11.9z"/>
+          </symbol>
+
+          <symbol id="i-comment" viewBox="0 0 24 24">
+            <path d="M21 11.5a8.5 8.5 0 0 1-12.2 7.6L3 20.5l1.5-5.2A8.5 8.5 0 1 1 21 11.5z"/>
+          </symbol>
+
+          <symbol id="i-bookmark" viewBox="0 0 24 24">
+            <path d="M6 3.5h12v17.5l-6-4.6-6 4.6z"/>
+          </symbol>
+
+          <symbol id="i-plus" viewBox="0 0 24 24">
+            <path d="M12 4.5v15M4.5 12h15"/>
+          </symbol>
+
+          <symbol id="i-lines" viewBox="0 0 24 24">
+            <path d="M4 8h16M10 15h10"/>
+          </symbol>
+
+          <symbol id="i-chev" viewBox="0 0 24 24">
+            <path d="m6.5 9.5 5.5 5.5 5.5-5.5"/>
+          </symbol>
+
+          <symbol id="i-back" viewBox="0 0 24 24">
+            <path d="m15 4.5-7.5 7.5 7.5 7.5"/>
+          </symbol>
+
+          <symbol id="i-close" viewBox="0 0 24 24">
+            <path d="m5.5 5.5 13 13m0-13-13 13"/>
+          </symbol>
+
+          <symbol id="i-video" viewBox="0 0 24 24">
+            <rect x="2.5" y="6" width="13" height="12" rx="3.5"/>
+            <path d="m15.5 10.5 6-3.5v10l-6-3.5"/>
+          </symbol>
+
+          <symbol id="i-phone" viewBox="0 0 24 24">
+            <path d="M5.5 3.5h3.2l1.8 4.6-2.3 1.5a11 11 0 0 0 5.2 5.2l1.5-2.3 4.6 1.8v3.2a2 2 0 0 1-2.2 2A16.5 16.5 0 0 1 3.5 5.7a2 2 0 0 1 2-2.2z"/>
+          </symbol>
+
+          <symbol id="i-camera" viewBox="0 0 24 24">
+            <path d="M4 8.5a2 2 0 0 1 2-2h1.5L9 4.5h6l1.5 2H18a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2z"/>
+            <circle cx="12" cy="12.8" r="3.5"/>
+          </symbol>
+
+          <symbol id="i-mic" viewBox="0 0 24 24">
+            <rect x="9" y="3" width="6" height="11" rx="3"/>
+            <path d="M5.5 11.5a6.5 6.5 0 0 0 13 0M12 18v3"/>
+          </symbol>
+
+          <symbol id="i-image" viewBox="0 0 24 24">
+            <rect x="3" y="4" width="18" height="16" rx="3.5"/>
+            <circle cx="9" cy="10" r="1.7"/>
+            <path d="m4 18 5-5 4 4 3-3 4 4"/>
+          </symbol>
+
+          <symbol id="i-smile" viewBox="0 0 24 24">
+            <circle cx="12" cy="12" r="9"/>
+            <path d="M8.3 14.2c1 1.5 2.2 2.2 3.7 2.2s2.7-.7 3.7-2.2"/>
+            <path d="M9 9.8v.4M15 9.8v.4"/>
+          </symbol>
+
+          <symbol id="i-compose" viewBox="0 0 24 24">
+            <path d="M12 4H6.5A2.5 2.5 0 0 0 4 6.5v11A2.5 2.5 0 0 0 6.5 20h11a2.5 2.5 0 0 0 2.5-2.5V12"/>
+            <path d="M18.2 3.6a2.1 2.1 0 0 1 3 3L12 15.8l-4 1 1-4z"/>
+          </symbol>
+
+          <symbol id="i-grid" viewBox="0 0 24 24">
+            <g fill="currentColor" stroke="none">
+              <rect x="3" y="3" width="5.2" height="5.2" rx=".6"/>
+              <rect x="9.4" y="3" width="5.2" height="5.2" rx=".6"/>
+              <rect x="15.8" y="3" width="5.2" height="5.2" rx=".6"/>
+              <rect x="3" y="9.4" width="5.2" height="5.2" rx=".6"/>
+              <rect x="9.4" y="9.4" width="5.2" height="5.2" rx=".6"/>
+              <rect x="15.8" y="9.4" width="5.2" height="5.2" rx=".6"/>
+              <rect x="3" y="15.8" width="5.2" height="5.2" rx=".6"/>
+              <rect x="9.4" y="15.8" width="5.2" height="5.2" rx=".6"/>
+              <rect x="15.8" y="15.8" width="5.2" height="5.2" rx=".6"/>
+            </g>
+          </symbol>
+
+          <symbol id="i-tag" viewBox="0 0 24 24">
+            <rect x="3" y="3" width="18" height="18" rx="4"/>
+            <circle cx="12" cy="10" r="3"/>
+            <path d="M6.5 19c.7-3 3-4.5 5.5-4.5s4.8 1.5 5.5 4.5"/>
+          </symbol>
+
+          <symbol id="i-pin" viewBox="0 0 24 24">
+            <path d="M9 3h6l-.8 5.5L17 12v1.5h-4.5V20l-.5 1.2-.5-1.2v-6.5H7V12l2.8-3.5z" fill="currentColor" stroke="none"/>
+          </symbol>
+
+          <symbol id="i-play" viewBox="0 0 24 24">
+            <path d="M8 5v14l11-7z" fill="currentColor" stroke="none"/>
+          </symbol>
+
+          <symbol id="i-useradd" viewBox="0 0 24 24">
+            <circle cx="10" cy="8" r="3.7"/>
+            <path d="M3.5 20c.6-3.8 3.3-5.8 6.5-5.8s5.9 2 6.5 5.8M19 8v6M16 11h6"/>
+          </symbol>
+
+          <symbol id="i-logo" viewBox="0 0 24 24">
+            <rect x="3" y="3" width="18" height="18" rx="5.5"/>
+            <circle cx="12" cy="12" r="4.2"/>
+            <circle cx="17.2" cy="6.8" r=".9" fill="currentColor" stroke="none"/>
+          </symbol>
+        </svg>
+
+        <!-- Instagram home, messages and profile screens -->
+        <div class="ap lt ig" id="ap-ig">
+
+          <!-- Instagram home feed -->
+          <section class="igv on" id="igv-home">
+            <header class="ig-top">
+              <button
+                class="ig-ib"
+                type="button"
+                aria-label="New post"
+              >
+                <svg class="ig-i">
+                  <use href="#i-plus"/>
+                </svg>
+              </button>
+
+              <div class="ig-logo">Instagram</div>
+
+              <button
+                class="ig-ib"
+                type="button"
+                aria-label="Notifications"
+              >
+                <svg class="ig-i">
+                  <use href="#i-heart"/>
+                </svg>
+              </button>
+            </header>
+
+            <div class="ig-scroll" id="ig-feed"></div>
+          </section>
+
+          <!-- Instagram direct messages -->
+          <section class="igv" id="igv-dm">
+            <header class="ig-top">
+              <button
+                class="ig-ib"
+                type="button"
+                aria-label="New"
+              >
+                <svg class="ig-i">
+                  <use href="#i-plus"/>
+                </svg>
+              </button>
+
+              <div class="ig-title">
+                <span id="ig-me-name"></span>
+                <svg class="ig-i sm">
+                  <use href="#i-chev"/>
+                </svg>
+              </div>
+
+              <button
+                class="ig-ib"
+                type="button"
+                aria-label="New message"
+              >
+                <svg class="ig-i">
+                  <use href="#i-compose"/>
+                </svg>
+              </button>
+            </header>
+
+            <div class="ig-scroll" id="ig-dmscroll">
+              <!-- Message search bar -->
+              <div class="ig-search">
+                <svg class="ig-i sm">
+                  <use href="#i-search"/>
+                </svg>
+                <input
+                  id="ig-dmq"
+                  placeholder="Search"
+                  autocomplete="off"
+                >
+              </div>
+
+              <!-- Notes and message list -->
+              <div class="ig-notes ig-hs" id="ig-notes"></div>
+
+              <div class="ig-mh">
+                <b>Messages</b>
+                <span>Requests</span>
+              </div>
+
+              <div id="ig-threads"></div>
+            </div>
+          </section>
+
+          <!-- Individual Instagram chat -->
+          <section class="igv ig-chat" id="igv-chat">
+            <header class="ig-chh">
+              <button
+                class="ig-ib"
+                type="button"
+                id="ig-cback"
+                aria-label="Back"
+              >
+                <svg class="ig-i">
+                  <use href="#i-back"/>
+                </svg>
+              </button>
+
+              <div class="ig-chw" id="ig-chhead"></div>
+
+              <button
+                class="ig-ib"
+                type="button"
+                aria-label="Call"
+              >
+                <svg class="ig-i">
+                  <use href="#i-phone"/>
+                </svg>
+              </button>
+
+              <button
+                class="ig-ib"
+                type="button"
+                aria-label="Video"
+              >
+                <svg class="ig-i">
+                  <use href="#i-video"/>
+                </svg>
+              </button>
+            </header>
+
+            <!-- Chat messages appear here -->
+            <div class="ig-msgs" id="ig-msgs"></div>
+
+            <!-- Message input area -->
+            <div class="ig-comp">
+              <div class="ig-cpill">
+                <span class="ig-cam">
+                  <svg class="ig-i sm">
+                    <use href="#i-camera"/>
+                  </svg>
+                </span>
+
+                <input
+                  id="ig-min"
+                  placeholder="Message..."
+                  autocomplete="off"
+                >
+
+                <span class="ig-cic" id="ig-cic">
+                  <svg class="ig-i">
+                    <use href="#i-mic"/>
+                  </svg>
+                  <svg class="ig-i">
+                    <use href="#i-image"/>
+                  </svg>
+                  <svg class="ig-i">
+                    <use href="#i-smile"/>
+                  </svg>
+                </span>
+
+                <button
+                  type="button"
+                  class="ig-snd"
+                  id="ig-snd"
+                >
+                  Send
+                </button>
+              </div>
+            </div>
+          </section>
+
+          <!-- Instagram profile -->
+          <section class="igv" id="igv-profile">
+            <header class="ig-top">
+              <button
+                class="ig-ib"
+                type="button"
+                aria-label="New"
+              >
+                <svg class="ig-i">
+                  <use href="#i-plus"/>
+                </svg>
+              </button>
+
+              <div class="ig-title">
+                <span id="ig-pf-user"></span>
+                <svg class="ig-i sm">
+                  <use href="#i-chev"/>
+                </svg>
+              </div>
+
+              <button
+                class="ig-ib"
+                type="button"
+                aria-label="Menu"
+              >
+                <svg class="ig-i">
+                  <use href="#i-lines"/>
+                </svg>
+              </button>
+            </header>
+
+            <div class="ig-scroll" id="ig-pf"></div>
+          </section>
+
+          <!-- Instagram bottom navigation -->
+          <nav class="ig-nav" id="ig-nav">
+            <button
+              type="button"
+              data-v="home"
+              class="on"
+              aria-label="Home"
+            >
+              <svg class="ig-i">
+                <use href="#i-home"/>
+              </svg>
+            </button>
+
+            <button type="button" aria-label="Reels">
+              <svg class="ig-i">
+                <use href="#i-reels"/>
+              </svg>
+            </button>
+
+            <button
+              type="button"
+              data-v="dm"
+              aria-label="Messages"
+            >
+              <svg class="ig-i">
+                <use href="#i-send"/>
+              </svg>
+              <i class="ig-dot"></i>
+            </button>
+
+            <button type="button" aria-label="Search">
+              <svg class="ig-i">
+                <use href="#i-search"/>
+              </svg>
+            </button>
+
+            <button type="button" data-v="profile" aria-label="Profile">
+              <span id="ig-nav-av"></span>
+            </button>
+          </nav>
+
+          <!-- Instagram story viewer -->
+          <div id="ig-story">
+            <div class="igs-card" id="igs-card">
+              <div class="igs-bars" id="igs-bars"></div>
+
+              <div class="igs-head">
+                <span id="igs-av"></span>
+                <b id="igs-un"></b>
+                <em id="igs-tm"></em>
+
+                <button
+                  type="button"
+                  id="igs-x"
+                  aria-label="Close"
+                >
+                  <svg class="ig-i">
+                    <use href="#i-close"/>
+                  </svg>
+                </button>
+              </div>
+
+              <div class="igs-layer" id="igs-layer"></div>
+            </div>
+
+            <!-- Story reply controls -->
+            <div class="igs-reply">
+              <input
+                id="igs-in"
+                placeholder="Send message..."
+                autocomplete="off"
+              >
+
+              <button
+                id="igs-like"
+                aria-label="Like"
+                type="button"
+              >
+                <svg class="ig-i">
+                  <use href="#i-heart"/>
+                </svg>
+              </button>
+
+              <button
+                id="igs-send"
+                aria-label="Send"
+                type="button"
+              >
+                <svg class="ig-i">
+                  <use href="#i-send"/>
+                </svg>
+              </button>
+            </div>
+
+            <div class="igs-toast" id="igs-toast">Sent</div>
+          </div>
+        </div>
+
+        <!-- Full-size photo viewer -->
+        <div id="big"></div>
+
+        <div id="bigbar">
+          <button class="gb" id="bback">‹</button>
+          <span
+            class="gb"
+            id="bdate"
+            style="padding: 0 16px; font-size: 15px"
+          ></span>
+        </div>
+
+        <!-- LOCK SCREEN -->
+        <div class="screen" id="lock">
+          <div class="ldate" id="ld"></div>
+
+          <div class="lw">
+            <span id="lt"></span>
+          </div>
+
+          <!-- Flashlight shortcut -->
+          <button
+            class="lbtn"
+            style="left: 30px"
+            id="fl"
+            title="Flashlight"
+          >
+            <svg viewBox="0 0 24 24">
+              <path d="M8 2h8v4l-1.5 2v13a1.5 1.5 0 0 1-1.5 1.5h-2A1.5 1.5 0 0 1 9.5 21V8L8 6zM12 11a1.3 1.3 0 0 0-1.3 1.3v1.4a1.3 1.3 0 0 0 2.6 0v-1.4A1.3 1.3 0 0 0 12 11z"/>
+            </svg>
+          </button>
+
+          <!-- Camera shortcut -->
+          <button
+            class="lbtn"
+            style="right: 30px"
+            title="Camera"
+          >
+            <svg viewBox="0 0 24 24">
+              <path d="M9 4l-1.5 2H5a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-2.5L15 4zM12 9a4.2 4.2 0 1 1 0 8.4A4.2 4.2 0 0 1 12 9zm0 1.8a2.4 2.4 0 1 0 0 4.8 2.4 2.4 0 0 0 0-4.8z"/>
+            </svg>
+          </button>
+
+          <div class="hbar" id="lh"></div>
+        </div>
+
+        <!-- Passcode screen -->
+        <div id="pass">
+          <h3>Swipe up for Face ID or Enter Passcode</h3>
+
+          <div class="dots" id="dots">
+            <i></i>
+            <i></i>
+            <i></i>
+            <i></i>
+          </div>
+
+          <div class="pad" id="pad"></div>
+
+          <div class="pf">
+            <span>Emergency</span>
+            <span id="cancel">Cancel</span>
+          </div>
+        </div>
+
+        <!-- Home indicator -->
+        <div class="hbar" id="hb" style="display: none"></div>
+      </div>
+    </div>
+
+    <!-- Connects the JavaScript file -->
+    <script src="script.js"></script>
+  </body>
+</html>
