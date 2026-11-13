@@ -188,7 +188,7 @@ $$("[data-close]").forEach(b => b.onclick = closeApp);
 // Locket: static display only
 const locket = $("#locket");
 const profile = $("#lpp");
-locket.style.backgroundImage = "url('photos_phone/locket1.jpg')";
+locket.style.backgroundImage = "url('photos_phone/hallway.jpg')";
 locket.style.backgroundSize = "cover";
 locket.style.backgroundPosition = "center";
 profile.style.backgroundImage = "url('photos_phone/locket2.jpg')";
@@ -420,53 +420,16 @@ rclock();
 openApp.clock = rclock;
 // ---------- PHOTOS ----------*/
 const PHOTO_LIST = [
-  { src: "photos_phone/download (22).jpg", date: "2025-03-12" },
-  { src: "photos_phone/Subaru.jpg", date: "2025-04-27" },
-  { src: "photos_phone/winter aespa.jpg", date: "2025-05-09" },
-  { src: "photos_phone/download (2).jpg", date: "2025-06-18" },
-  { src: "photos_phone/download (1).jpg", date: "2025-07-02" },
-  { src: "photos_phone/download (6).jpg", date: "2025-07-25" },
-  { src: "photos_phone/download (14).jpg", date: "2025-08-11" },
-  { src: "photos_phone/download (18).jpg", date: "2025-08-29" },
-  { src: "photos_phone/Winter (1).jpg", date: "2025-09-06" },
-  { src: "photos_phone/download (21).jpg", date: "2025-09-23" },
-  { src: "photos_phone/ddf38b9b4c3c68783ba3e83fd4b51175.jpg", date: "2025-10-14" },
-  { src: "photos_phone/Ryujin.jpg", date: "2025-11-03" },
-  { src: "photos_phone/ᨳ᭬ giselle ˎˊ˗ ࿐.jpg", date: "2025-11-21" },
-  { src: "photos_phone/basketball gym aesthetic.jpg", date: "2025-12-08" },
-  { src: "photos_phone/download (9).jpg", date: "2025-12-19" },
-  { src: "photos_phone/UP Diliman.jpg", date: "2026-01-07" },
-  { src: "photos_phone/download (5).jpg", date: "2026-01-19" },
-  { src: "photos_phone/download.jpg", date: "2026-02-02" },
-  { src: "photos_phone/4f0d18135984f908cab6a5bcaf1f966e.jpg", date: "2026-02-16" },
-  { src: "photos_phone/250928   aespa.jpg", date: "2026-02-28" },
-  { src: "photos_phone/entrega de arquitectura.jpg", date: "2026-03-08" },
-  { src: "photos_phone/71bdf23b2436e0734443fa94aedbee5a.jpg", date: "2026-03-17" },
-  { src: "photos_phone/download (16).jpg", date: "2026-03-29" },
-  { src: "photos_phone/ce9a6128f7787e380405dc0d02032336.jpg", date: "2026-04-04" },
-  { src: "photos_phone/download (12).jpg", date: "2026-04-13" },
-  { src: "photos_phone/download (23).jpg", date: "2026-04-25" },
-  { src: "photos_phone/download (8).jpg", date: "2026-05-02" },
-  { src: "photos_phone/download (17).jpg", date: "2026-05-11" },
-  { src: "photos_phone/download (4).jpg", date: "2026-05-23" },
-  { src: "photos_phone/download (15).jpg", date: "2026-06-01" },
-  { src: "photos_phone/download (10).jpg", date: "2026-06-09" },
-  { src: "photos_phone/download (11).jpg", date: "2026-06-18" },
-  { src: "photos_phone/KARINA.jpg", date: "2026-06-27" },
-  { src: "photos_phone/KITTEH.jpg", date: "2026-07-05" },
-  { src: "photos_phone/Dimitri Romanov _ Ice in my Tequila _ Cercle series, books, boyfriend, grump x sunshine.jpg", date: "2026-07-14" },
-  { src: "photos_phone/KARINA AESPA.jpg", date: "2026-07-26" },
-  { src: "photos_phone/street ice cream.jpg", date: "2026-08-03" },
-  { src: "photos_phone/1640660cd2420fa22689d6fc05f51321.jpg", date: "2026-08-12" },
-  { src: "photos_phone/(112221) ❤️ karina.jpg", date: "2026-08-21" },
-  { src: "photos_phone/download (20).jpg", date: "2026-09-02" },
-  { src: "photos_phone/download (3).jpg", date: "2026-09-11" },
-  { src: "photos_phone/download (7).jpg", date: "2026-09-19" },
-  { src: "photos_phone/𓆩༢࿔ྀુ❀✯⁖℘.jpg", date: "2026-10-04" },
-  { src: "photos_phone/Rainy Day.jpg", date: "2026-10-18" },
-  { src: "photos_phone/Opposites.jpg", date: "2026-10-22" },
-  { src: "photos_phone/download (19).jpg", date: "2026-10-26" },
-  { src: "photos_phone/⋆˚☆˖°.jpg", date: "2026-10-29" },
+  { src: "photos_phone/118ab8f95c12d8e182bd4374714f0f1b.jpg", date: "2025-03-12" },
+  { src: "photos_phone/178d20f4d2c422c56f3713a0be88d4ca.jpg", date: "2025-04-27" },
+  { src: "photos_phone/2f2bf8229d49c8ca49570dc88276ddc3.jpg", date: "2025-05-09" },
+  { src: "photos_phone/331ccd096073fb1173826d9d3c41ae89.jpg", date: "2025-06-18" },
+  { src: "photos_phone/6c582ad2d4de521f874aee9d0b79685c.jpg", date: "2025-07-02" },
+  { src: "photos_phone/7f7e86a79b738cdd7a63fb0f0a467b63.jpg", date: "2025-07-25" },
+  { src: "photos_phone/a97991af946de3cd504038de0289b318.jpg", date: "2025-08-11" },
+  { src: "photos_phone/aaea5dfd9f809828e024ea8cb98343ac.jpg", date: "2025-08-29" },
+  { src: "photos_phone/ccbddcd888df5ba0e4c052e9e8ed70b8.jpg", date: "2025-09-06" },
+  { src: "photos_phone/e60ef01d575815dfcd5e50b6fb8fd30f.jpg", date: "2025-09-23" },
 ];
 let photos = PHOTO_LIST.map((p, i) => ({ id: i + 1, s: p.src, t: p.date ? +new Date(p.date + "T12:00") : Date.now() - (PHOTO_LIST.length - i) * 864e5 })), pv = "a";
 function shrink(f, cb) { const r = new FileReader(); r.onload = () => { const i = new Image(); i.onload = () => { const k = Math.min(1, 700 / Math.max(i.width, i.height)), c = document.createElement("canvas"); c.width = i.width * k; c.height = i.height * k; c.getContext("2d").drawImage(i, 0, 0, c.width, c.height); cb(c.toDataURL("image/jpeg", .72)); }; i.src = r.result; }; r.readAsDataURL(f); }
@@ -616,7 +579,7 @@ $("#kcall").onclick = () => { if (kn) {
   kshow();
 } };
 // voicemail
-let vms = [{ n: "Ate Liza", t: dAgo(0, 16, 48), d: 12, x: "“Anong oras ka uuwi? Text mo ako, ha.”", u: 1 }, { n: "Dr. Lopez", t: dAgo(1, 10, 15), d: 21, x: "“Hello, Karina. This is Dr. Lopez reminding you about your dentist appointment. Please call back to confirm the time. Thank you.”", u: 1 }], vo = null, vp = 0, vt = null;
+let vms = [{ n: "Fourth", t: dAgo(0, 16, 48), d: 12, x: "“absent ka teh?”", u: 1 }, { n: "HEAD NURSE Satang", t: dAgo(1, 10, 15), d: 21, x: "“Hello Phuwin. Pwede ka ba mag-12 hours bukas?”", u: 1 }], vo = null, vp = 0, vt = null;
 function rvm() {
   $("#vlist").innerHTML = `<div style="background:#f2f2f7;border-radius:30px;padding:14px 16px;display:flex;justify-content:space-between;align-items:center;margin:4px 0 8px;font-weight:600;font-size:15px">Service Provider Voicemail<button class="pill" style="background:#dbe9ff;color:#0a84ff;font-size:14px;padding:8px 12px">Call Service Provider</button></div>` + vms.map((v, i) => `<div class="vr" data-i="${i}">${v.u ? '<i class="ud"></i>' : ""}<div class="tt"><b>${esc(v.n)}</b><span>${fdate(v.t)}<br>00:${p2(v.d)}</span></div><p>${esc(v.x)}</p>${vo === i ? `<div class="vb"><button class="vplay">${vt ? "❚❚" : "▶"}</button><div class="vtr"><i style="width:${vp / v.d * 100}%"></i></div><span>0:${p2(Math.floor(vp))}</span></div>` : ""}</div>`).join("");
   const u = vms.filter(v => v.u).length;
@@ -772,7 +735,7 @@ function msend() {
     return;
   let s = null;
   if (asThem && curT.gc) {
-    s = prompt("Who sent it?", "Ningning");
+    s = prompt("Pasabay kape", "okkk");
     if (!s)
       return;
   }
